@@ -1,0 +1,64 @@
+﻿@model mvctest.Models.Staff
+
+@{
+    ViewBag.Title = "删除员工信息";
+}
+
+
+
+
+<div>
+    <h4>员工信息</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.S_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_post)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_post)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_department)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_department)
+        </dd>
+        
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
