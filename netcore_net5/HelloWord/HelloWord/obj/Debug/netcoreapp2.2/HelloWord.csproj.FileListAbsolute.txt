@@ -1,0 +1,13 @@
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\bin\Debug\netcoreapp2.2\HelloWord.deps.json
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\bin\Debug\netcoreapp2.2\HelloWord.runtimeconfig.json
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\bin\Debug\netcoreapp2.2\HelloWord.runtimeconfig.dev.json
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\bin\Debug\netcoreapp2.2\HelloWord.dll
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\bin\Debug\netcoreapp2.2\HelloWord.pdb
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.csproj.AssemblyReference.cache
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.GeneratedMSBuildEditorConfig.editorconfig
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.AssemblyInfoInputs.cache
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.AssemblyInfo.cs
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.csproj.CoreCompileInputs.cache
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.dll
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.pdb
+E:\practice\asp.net\.net_core(.net5)\HelloWord\HelloWord\obj\Debug\netcoreapp2.2\HelloWord.genruntimeconfig.cache
