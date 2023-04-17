@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = LZBigNoodles
-build_property.ProjectDir = E:\practice\asp.net\.net_core(.net5)\LZBigNoodles\LZBigNoodles\
+build_property.ProjectDir = E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\
