@@ -1,3 +1,4 @@
+using LZBigNoodles.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,7 +18,8 @@ namespace LZBigNoodles
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddTransient<INoodleRepository, MockNoodleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,35 +31,36 @@ namespace LZBigNoodles
             }
 
             //旧版本需要在services.AddMvc方法中添加‘options => options.EnableEndpointRouting = false’
-            //app.UseMvc(route => {
-            //    route.MapRoute("default", "{controller=Home}/{action=Index}"); 
-            //    });
+            app.UseMvc(route =>
+            {
+                route.MapRoute("default", "{controller=Home}/{action=Index}");
+            });
 
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
 
 
             //新版本
-            app.UseRouting();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"
-                    );
-                endpoints.MapControllers();//特征注释路由
-                endpoints.MapDefaultControllerRoute();//传统路由
-                endpoints.MapGet("/test", async context =>
-                {
-                    await context.Response.WriteAsync("Hello test!");
-                });
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
+            //app.UseRouting();
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "default",
+            //        pattern: "{controller=Home}/{action=Index}/{id?}"
+            //        );
+            //    endpoints.MapControllers();//特征注释路由
+            //    endpoints.MapDefaultControllerRoute();//传统路由
+            //    endpoints.MapGet("/test", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello test!");
+            //    });
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello World!");
+            //    });
+            //});
 
 
 
