@@ -132,3 +132,5 @@ E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\obj\Debug\net5.0\Razo
 E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\obj\Debug\net5.0\LZBigNoodles.RazorTargetAssemblyInfo.cs
 E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\obj\Debug\net5.0\LZBigNoodles.Views.pdb
 E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\obj\Debug\net5.0\Razor\Views\Feedback\Index.cshtml.g.cs
+E:\gitee\lianxi\.net_core(.net5)\LZBigNoodles\LZBigNoodles\obj\Debug\net5.0\Razor\Views\Feedback\FeedbackComplete.cshtml.g.cs
