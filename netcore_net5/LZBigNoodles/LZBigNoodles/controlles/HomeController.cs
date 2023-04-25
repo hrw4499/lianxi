@@ -38,5 +38,10 @@ namespace LZBigNoodles.controlles
         {
             return View();
         }
+
+        public IActionResult Detail(int id)
+        {
+            return View(_noodleRepository.GetNoodleById(id));
+        }
     }
 }
