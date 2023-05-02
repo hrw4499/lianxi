@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{userName}}
+        <button @click="onGetValue">获取数据</button>
+    </div>
+    <script>
+        const { createApp,ref } = Vue;
+        const app = createApp({
+            setup() {
+                const userName = ref("hrw");
+                const onGetValue = () => {                   
+                    axios.post("https://localhost:7094/api/Test/Post",{ i:1996,name:"wangziyi"})
+                        .then(res => {
+                            userName.value = res.data;
+                        })
+                }
+                return { userName, onGetValue }
+            }
+        })
+        app.mount("#app");
+    </script>
+</body>
+</html>

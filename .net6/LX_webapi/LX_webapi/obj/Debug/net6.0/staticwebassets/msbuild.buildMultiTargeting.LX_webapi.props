@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LX_webapi.props" />
+</Project>
