@@ -1,5 +1,8 @@
 
 
+using LX_webapi.Models;
+using LX_webapi.Services;
+using LX_webapi.Services.IServices;
 using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +13,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IUserService,UserService>();
+builder.Services.AddTransient<UserService>();
+
+builder.Services.AddTransient<IScopedService,ScopedService>();
+builder.Services.AddTransient<ISingletonService,SingletonService>();
+builder.Services.AddTransient<ITransientService,TransientService>();
+builder.Services.AddTransient<IIocService1,IocService1>();
+builder.Services.AddTransient<IIocService2,IocService2>();
 
 
 var app = builder.Build();
@@ -42,4 +54,27 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+//app.MapGet("/", HelloWorld.Hello);
+
+string Hi() => "HI";
+//app.MapGet("/", Hi);
+
+app.MapGet("/", (UserService userservice)=> {
+    return userservice.GetUserName();
+});
+
+app.MapPost("/",(TestPostViewModel model) => 
+{ 
+    return model; 
+});
+
 app.Run();
+
+public class HelloWorld
+{
+    public static string Hello()
+    {
+        return "helloword";
+    }
+}
+
