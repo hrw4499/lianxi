@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "k6ZiVGvmV/UVkpiYvQirngufBVLzraS1acJo07gL0Lo=",
+  "Source": "EfCoreDemo.API",
+  "BasePath": "_content/EfCoreDemo.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
