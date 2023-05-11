@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "11d6DoOXcfeNDekQtZ2r+o05ABYUMy1rJ+7MSIkPO43P2vQrx2V35PAM6bqI58cgeEcuIEx84kykmIPn/RHEmg==",
+  "dgSpecHash": "TZZTXp53aIAk9aX7LQwGkMwzN1wUincJ8dAR86+RuI8xGmbigs9tDbscWa48/x7dbjjM1CrYrSo8hARKxPnVjg==",
   "success": true,
-  "projectFilePath": "E:\\gitee\\lianxi\\.net6\\CodeFirstDemo\\CodeFirstDemo\\CodeFirstDemo.csproj",
+  "projectFilePath": "E:\\github\\lianxi\\.net6\\CodeFirstDemo\\CodeFirstDemo\\CodeFirstDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hrw\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hrw\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
